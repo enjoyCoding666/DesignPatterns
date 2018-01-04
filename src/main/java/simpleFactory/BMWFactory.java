@@ -1,11 +1,10 @@
 package simpleFactory;
 
-/**
- * 简单工厂类。可以生产不同类型的单一产品。
- */
-public class CarFactory {
+
+public class BMWFactory {
     /**
-     *  通过反射机制实例化
+     *  通过反射机制实例化。
+     *  利用工厂模式，客户端只需要对工厂指定你要创建的对象的名字（参数），工厂就可以根据你指定的参数动态创建不同的对象
      * @param carName   包名.类名组成的class。
      * @return
      * @throws ClassNotFoundException

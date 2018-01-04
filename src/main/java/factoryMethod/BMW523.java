@@ -1,7 +1,8 @@
-package simpleFactory;
+package factoryMethod;
 
 public class BMW523 extends BMW {
-    public void produce(){
+    @Override
+    public void produce() {
         System.out.println("生产BMW523");
     }
 }
