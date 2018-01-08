@@ -1,4 +1,4 @@
-package simpleFactory;
+package factorySimple;
 
 /**
  * 具体的产品类

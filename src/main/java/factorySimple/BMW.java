@@ -1,4 +1,4 @@
-package simpleFactory;
+package factorySimple;
 
 /**
  * 抽象产品类，具体产品可以继承抽象产品

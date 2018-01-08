@@ -1,4 +1,4 @@
-package simpleFactory;
+package factorySimple;
 
 /**
  * 简单工厂模式：由一个工厂类根据传入的参数，动态决定应该创建哪一个产品类（这些产品类继承自一个父类或接口）的实例。
@@ -6,8 +6,8 @@ package simpleFactory;
  */
 public class Client {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, ClassNotFoundException {
-        BMW bmw1= BMWFactory.createBMW("simpleFactory.BMW320");
-        BMW bmw2= BMWFactory.createBMW("simpleFactory.BMW523");
+        BMW bmw1= BMWFactory.createBMW("factorySimple.BMW320");
+        BMW bmw2= BMWFactory.createBMW("factorySimple.BMW523");
         produceCar(bmw1);
         produceCar(bmw2);
     }

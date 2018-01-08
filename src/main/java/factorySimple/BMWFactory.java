@@ -1,4 +1,4 @@
-package simpleFactory;
+package factorySimple;
 
 
 public class BMWFactory {
