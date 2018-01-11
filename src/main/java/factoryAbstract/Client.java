@@ -2,6 +2,7 @@ package factoryAbstract;
 
 /**
  * 在客戶端中，根据不同的工厂，制造不同型号的配件。
+ * 参考博客：http://blog.csdn.net/zhengzhb/article/details/7359385
  */
 public class Client {
     public static void main(String[] args) {

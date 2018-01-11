@@ -1,6 +1,7 @@
 package factoryMethod;
 
 /**
+ * 参考博客：http://blog.csdn.net/jason0539/article/details/23020989
  * 客户端
  */
 public class Client {
