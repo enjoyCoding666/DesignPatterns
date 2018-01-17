@@ -2,6 +2,7 @@ package proxy.staticProxy;
 
 /**
  * 通过代理类，调用相关的方法
+ * 代理类似于"中介"卖房子
  */
 public class Client {
     public static void main(String[] args) {
