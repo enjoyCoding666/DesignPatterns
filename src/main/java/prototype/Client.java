@@ -9,6 +9,5 @@ public class Client {
 
     public void operation(Prototype example){
         Prototype copyPrototype=(Prototype) example.clone();
-
     }
 }
