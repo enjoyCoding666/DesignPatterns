@@ -1,4 +1,4 @@
-package proxy.dynamicProxy;
+package proxy.dynamicProxy.jdkProxy;
 
 public interface Moveable {
     void  move() throws InterruptedException;
