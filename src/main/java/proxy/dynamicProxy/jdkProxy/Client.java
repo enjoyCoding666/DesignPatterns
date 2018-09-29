@@ -8,7 +8,7 @@ import java.lang.reflect.Proxy;
  */
 public class Client {
     public static void main(String[] args) throws InterruptedException, ClassNotFoundException, IllegalAccessException, InstantiationException {
-//        Class<?> clazz=Class.forName("proxy.dynamicProxy.jdkProxy.Car");
+//        Class<?> clazz=Class.forName("proxy.dynamicProxy.UseService.Car");
 //        Car car=(Car)clazz.newInstance();
          Car car=new Car();
         InvocationHandler handler=new TimeHandler(car);
