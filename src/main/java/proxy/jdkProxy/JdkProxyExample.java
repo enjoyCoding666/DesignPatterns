@@ -28,7 +28,7 @@ public class JdkProxyExample implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("进入代理逻辑方法。");
         System.out.println("在调度真实对象之前的逻辑");
-        Object object=method.invoke(target,args);
+        Object object=method.invoke(target,args);       //通过反射进行方法的调用
         System.out.println("在调度真实对象之后的逻辑");
         return object;
     }
