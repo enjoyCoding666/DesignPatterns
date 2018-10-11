@@ -14,6 +14,7 @@ public class JdkProxyExample implements InvocationHandler {
      */
     public Object getProxyObject(Object target) {
         this.target=target;
+        //以下三个参数分别表示类加载器 、Class的全部接口、当前对象
         return Proxy.newProxyInstance(target.getClass().getClassLoader(),target.getClass().getInterfaces(),this);
     }
 
@@ -25,6 +26,7 @@ public class JdkProxyExample implements InvocationHandler {
      * @return  代理结果
      * @throws Throwable
      */
+    @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("进入代理逻辑方法。");
         System.out.println("在调度真实对象之前的逻辑");
