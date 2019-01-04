@@ -1,16 +1,29 @@
 package singleton;
 
-/**
- * 饿汉式。在类中实例化，外部调用时直接返回单例。
- */
 public class Singleton{
-    private static Singleton singleton=new Singleton();
-    //构造器私有化
-    private Singleton(){
+    /**
+     * 懒汉式。先声明，等要用的时候再实例化。
+     * 使用volatile修饰，保证可见性。
+     */
+    private  static volatile Singleton singleton=null;
 
+    private Singleton(){
+        //..
     }
 
-    public static  Singleton  getInstance(){
+    /**
+     * 使用双重检查锁,保证线程安全。
+     * static修饰为静态变量，可以直接
+     */
+    public static Singleton getSingleton() {
+        if(singleton==null) {
+            synchronized(singleton) {
+                if(singleton==null) {
+                    singleton=new Singleton();
+                }
+            }
+        }
         return singleton;
     }
+
 }
