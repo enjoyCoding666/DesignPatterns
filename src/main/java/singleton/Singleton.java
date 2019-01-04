@@ -13,7 +13,7 @@ public class Singleton{
 
     /**
      * 使用双重检查锁,保证线程安全。
-     * static修饰为静态变量，可以直接
+     * static修饰为静态变量，可以直接通过类名调用。
      */
     public static Singleton getSingleton() {
         if(singleton==null) {
