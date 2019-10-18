@@ -21,7 +21,7 @@ public class Invoice {
 	private BigDecimal totalAmount;
 
 	/**
-	 * 火车票的专属字段，这个是否要抽到另一个对象里面?
+	 * 火车票的专属字段
 	 */
 	private String trainNum;
 	private String passengerName;
