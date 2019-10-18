@@ -1,8 +1,8 @@
 package demo.invoice;
 
-public class InvoiceServiceOther implements InvoiceService {
+public class InvoiceServiceOther extends InvoiceOperation implements InvoiceService {
 	@Override
-	public Invoice queryInvoice(String invoiceNo, String invoiceCode) {
+	public Invoice queryInvoice(Invoice invoice) {
 		System.out.println("查询其他发票");
 		return null;
 	}

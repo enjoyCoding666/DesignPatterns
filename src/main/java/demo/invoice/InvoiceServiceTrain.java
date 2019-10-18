@@ -1,8 +1,8 @@
 package demo.invoice;
 
-public class InvoiceServiceTrain implements InvoiceService {
+public class InvoiceServiceTrain  extends InvoiceOperation implements InvoiceService {
 	@Override
-	public Invoice queryInvoice(String invoiceNo, String invoiceCode) {
+	public Invoice queryInvoice(Invoice invoice) {
 		System.out.println("查询火车票");
 		return null;
 	}

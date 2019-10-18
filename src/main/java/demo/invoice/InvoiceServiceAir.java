@@ -1,10 +1,14 @@
 package demo.invoice;
 
-public class InvoiceServiceAir implements InvoiceService{
+public class InvoiceServiceAir extends InvoiceOperation implements InvoiceService {
 
-
+	/**
+	 * 此处的参数类型，应该是Invoice还是InvoiceAir?
+	 * @param invoice
+	 * @return
+	 */
 	@Override
-	public Invoice queryInvoice(String invoiceNo, String invoiceCode) {
+	public Invoice queryInvoice(Invoice invoice) {
 		System.out.println("查询飞机票");
 		return null;
 	}

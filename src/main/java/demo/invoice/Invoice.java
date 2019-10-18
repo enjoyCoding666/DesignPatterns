@@ -21,7 +21,7 @@ public class Invoice {
 	private BigDecimal totalAmount;
 
 	/**
-	 * 火车票的专属字段
+	 * 火车票的专属字段，是放在主类里面，还是单独拆分一个新的类好？
 	 */
 	private String trainNum;
 	private String passengerName;
@@ -30,5 +30,6 @@ public class Invoice {
 	 */
 	private String electronicTicketNum;
 	private String customerIdentityNum;
+
 
 }
