@@ -4,6 +4,7 @@ public class Price {
     private  MemberStrategy strategy;
 
     /**
+     * 在构造方法中，注入策略对象
      *
      * @param strategy  具体的策略对象
      */
