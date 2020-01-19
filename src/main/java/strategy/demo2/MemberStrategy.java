@@ -1,4 +1,4 @@
-package strategy;
+package strategy.demo2;
 
 /**
  * 抽象折扣类

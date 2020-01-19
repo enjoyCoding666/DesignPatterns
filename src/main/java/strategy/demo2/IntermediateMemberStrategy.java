@@ -1,4 +1,4 @@
-package strategy;
+package strategy.demo2;
 
 public class IntermediateMemberStrategy implements  MemberStrategy {
     @Override

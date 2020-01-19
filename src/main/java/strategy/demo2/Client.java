@@ -1,4 +1,4 @@
-package strategy;
+package strategy.demo2;
 
 /**
  * 策略模式。针对不同等级的客户，采用不同的算法
